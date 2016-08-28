@@ -1,0 +1,82 @@
+/* 
+ * Blink SOS for Arduino
+ * by Kenneth M. O'Gorman,  Kayonix, LLC. 
+ * I make this code free to the public domain.  Mod it and make it your own!
+ */
+/* Arduino's built-in LED performs the Morse code universal call for help - S.O.S. */
+
+// Initialize pin 13, calling it "led1":
+int led1 = 13;
+
+// Standard setup routine:
+void setup() {               
+  // initialize the digital pin as an output.
+  pinMode(led1, OUTPUT);    
+}
+
+// The loop routine repeats until you power off the Arduino:
+void loop() {
+  
+// "S" (Sierra)
+  // ON
+  digitalWrite(led1, HIGH);   // LED on (HIGH is the voltage level)
+  delay(200);
+  //OFF
+  digitalWrite(led1, LOW);   // LED on (HIGH is the voltage level)
+  delay(200);  
+  // ON
+  digitalWrite(led1, HIGH);   // LED on (HIGH is the voltage level)
+  delay(200);
+  //OFF
+  digitalWrite(led1, LOW);   // LED on (HIGH is the voltage level)
+  delay(200);  
+  // ON
+  digitalWrite(led1, HIGH);   // LED on (HIGH is the voltage level)
+  delay(200);
+  //OFF
+  digitalWrite(led1, LOW);   // LED on (HIGH is the voltage level)
+  delay(1000); 
+   
+// "O" (Oscar)
+  // ON
+  digitalWrite(led1, HIGH);   // LED on (HIGH is the voltage level)
+  delay(300);   
+  //OFF
+  digitalWrite(led1, LOW);   // LED on (HIGH is the voltage level)
+  delay(500);    
+  // ON
+  digitalWrite(led1, HIGH);   // LED on (HIGH is the voltage level)
+  delay(300);   
+  //OFF
+  digitalWrite(led1, LOW);   // LED on (HIGH is the voltage level)
+  delay(500);    
+  // ON
+  digitalWrite(led1, HIGH);   // LED on (HIGH is the voltage level)
+  delay(300);   
+  //OFF
+  digitalWrite(led1, LOW);   // LED on (HIGH is the voltage level)
+  delay(500); 
+     
+// "S" (Sierra)
+  // ON
+  digitalWrite(led1, HIGH);   // LED on (HIGH is the voltage level)
+  delay(200);
+  //OFF
+  digitalWrite(led1, LOW);   // LED on (HIGH is the voltage level)
+  delay(200);  
+  // ON
+  digitalWrite(led1, HIGH);   // LED on (HIGH is the voltage level)
+  delay(200);
+  //OFF
+  digitalWrite(led1, LOW);   // LED on (HIGH is the voltage level)
+  delay(200);  
+  // ON
+  digitalWrite(led1, HIGH);   // LED on (HIGH is the voltage level)
+  delay(200);
+  //OFF
+  digitalWrite(led1, LOW);   // LED on (HIGH is the voltage level)
+  
+// Two second delay before starting over.
+  delay(2000);  
+ 
+}
